@@ -168,16 +168,24 @@ ls()
 
 1) Create three vectors a, b, c with three integers each. 
 
+#Note: A vector is an ordered collection of one or more individual values of the same data type. 
+
+
 ```{r}
-
-
+a <- c(2,4,6)
+b <- c(1,3,5)
+c <- c(7,8,9)
 ```
-
 
 2) Check the data class and type for each vector. 
 
 ```{r}
-
+class(a)
+typeof(a)
+class(b)
+typeof(b)
+class(c)
+typeof(c)
 ```
 
 
@@ -185,16 +193,28 @@ ls()
 
 
 ```{r}
-
-
+install.packages ("DescTools")
 ```
 
+``` {r}
+mode(a)
+median(a)
+mean(a)
+
+mode(b)
+median(b)
+mean(b)
+
+mode(c)
+median(c)
+mean(c)
+```
 
 4) Combine the three vectors into a data frame. 
 
 
 ```{r}
-
+df <- data.frame(a,b,c)
 ```
 
 
@@ -202,8 +222,5 @@ ls()
 
 
 ```{r}
-
+print(df)
 ```
-
-
-
